@@ -562,6 +562,9 @@ footer div div{
   .about_aboutContent_one{
     font-size:var(--FS-lg);
 }
+  .header_nav a{
+    font-size: var(--FS-sm);
+  }
 }
 
 
