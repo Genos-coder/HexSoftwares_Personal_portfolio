@@ -17,15 +17,57 @@
 <body>
     <Header>
         <h1>Genos</h1>
+        <input type="checkbox" id="mobile-check" onchange="console.log(`checked`)">
+        <label for="mobile-check" id="mobile-btn">
+
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav class="header_nav">
-            <a href="#about">About</a>
+
+            <a href="#about">Bio</a>
             <a href="#skills">skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact me</a>
+            <a href="#contactinfo">Contact Info</a>
+        </nav>
+        <nav class="mobile_nav">
+            <div class="mobile-nav-locator">
+                <div class="mobile_nav_container">
+
+                    <button class="mobile-btn-secondary" onclick="closeMobileNav()">
+
+                        <i class="fa-solid fa-x"></i>
+
+                    </button>
+                    <a href="#about" onclick="closeMobileNav()">
+
+                        Bio
+                    </a>
+                    <a href="#skills" onclick="closeMobileNav()">
+                        skills
+                    </a>
+                    <a href="#experience" onclick="closeMobileNav()">
+
+                        Experience
+                    </a>
+                    <a href="#contact" onclick="closeMobileNav()">
+
+                        Contact me
+
+                    </a>
+                    <a href="#contactinfo" onclick="closeMobileNav()">
+
+                        Contact Info
+
+                    </a>
+                </div>
+            </div>
         </nav>
     </Header>
     <main>
         <section id="about">
+            <!-- <h2 class="section_head">Bio</h2> -->
+
             <picture class="about_picture">
                 <source src="">
                 <img src="https://media.istockphoto.com/id/1219881657/vector/man-in-cap-and-bandana-vector-art.jpg?s=612x612&w=0&k=20&c=sLNz8W2NlIo6buAwNq04ls-_Y9OfS2wGYtthoGjwg94="
@@ -42,7 +84,7 @@
                     content.
 
                     Attention to detail extends beyond the surface level!</p>
-                <button>Download my cv </button>
+                <a href="https://chocolate-eolanda-72.tiiny.site/">Download my cv </a>
             </div>
         </section>
         <section id="skills">
@@ -87,8 +129,8 @@
                 </picture>
             </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="experience">
+            <h2>Experience</h2>
             <div class="projects_div">
                 <article>
                     <picture>
@@ -103,33 +145,22 @@
                 </article>
                 <article>
                     <picture>
-                        <img src="./images/projectone.png" alt="">
+                        <img src="./images/image.png" alt="">
                     </picture>
                     <h3>
 
-                        React-App
+                        Wanderlust-App
                     </h3>
-                    <p>In this react-app project i just made my potrfolio and nextjs dashboard project and redux
-                        toolkit is used inside the product page.</p>
+                    <p>The wanderlust app is a airbub like app where you can make your home airbnb for search for other
+                        places to rent as airbnb.</p>
 
                 </article>
-                <article>
-                    <picture>
-                        <img src="./images/projectone.png" alt="">
-                    </picture>
-                    <h3>
 
-                        React-App
-                    </h3>
-                    <p>In this react-app project i just made my potrfolio and nextjs dashboard project and redux
-                        toolkit is used inside the product page.</p>
-
-                </article>
             </div>
         </section>
     </main>
     <section id="contact">
-        <h2 class="section_head" style="font-size: 4rem;color: white; text-align: center;">Contact me</h2>
+        <h2 class="section_head">Contact me</h2>
         <form action="">
 
             <label for="email">Email</label>
@@ -142,27 +173,40 @@
             muted></video>
 
     </section>
-    <footer>
+    <footer id="contactinfo">
         <address>Planet earth 🌍</address>
         <div>
 
             <div>
                 <div>
 
-                    <a href=""><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://www.linkedin.com/in/ganesha-ai/"><i class="fa-brands fa-linkedin"
+                            style="color: white;"></i></a>
                     <p>linkedin</p>
                 </div>
                 <div>
 
 
-                    <a href=""><i class="fa-brands fa-github" style="color: white;"></i></a>
+                    <a href="https://github.com/Genos-coder"><i class="fa-brands fa-github"
+                            style="color: white;"></i></a>
                     <p>Github</p>
                 </div>
 
             </div>
         </div>
+        <p>
+            <a href="mailto:ganeshdoitnowh100@gmail.com">
+                ganeshdoitnowh100@gmail.com
+            </a>
+        </p>
+
         <p>&copy; All copyrights reserved by genos</p>
     </footer>
 </body>
+<script>
+    function closeMobileNav() {
+        document.querySelector("#mobile-check").checked = false
+    }
+</script>
 
 </html>
