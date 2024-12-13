@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -161,13 +162,14 @@
     </main>
     <section id="contact">
         <h2 class="section_head">Contact me</h2>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c9ceb293-ecda-4d6e-8bc4-f877087c0dca">
 
             <label for="email">Email</label>
             <input type="email" name="" id="email">
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-            <button disabled>Submit</button>
+            <button type="submit">Submit</button>
         </form>
         <video src="https://videos.pexels.com/video-files/2757709/2757709-sd_640_360_30fps.mp4" loop autoplay
             muted></video>
